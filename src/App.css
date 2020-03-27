@@ -1,38 +1,215 @@
 .App {
   text-align: center;
+  /* max-width: 50%; */
 }
+/* NAVBAR CSS */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
   background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  text-decoration: none;
+}
+
+/* Link {
+  text-decoration: none;
+} */
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 30%;
+  text-decoration: none;
+}
+
+li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+.homeLink {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.jokeContainer {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* height: 100vh; */
+  /* margin-top: 2050px; */
+  background-color: #30336b;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.form_container {
+  padding-top: 20px;
+}
+
+.joke_container {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.joke_key {
+  text-align: center;
+}
+
+.joke_value {
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.AppImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
   }
+}
+
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.raise2:hover,
+.raise2:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 1.5em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+
+.offset:hover,
+.offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+  --color: #cd70da;
+  --hover: #cb72aa;
+}
+
+.pulse {
+  --color: #a31e1e;
+  --hover: #eb2020;
+  /* --color: #ef6eae;
+  --hover: #ef8f6e; */
+}
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.raise {
+  --color: #27ae60;
+  --hover: #2ecc71;
+}
+
+.raise2 {
+  --color: #a31e1e;
+  --hover: #eb2020;
+}
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+
+button:hover,
+button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+body {
+  margin: 0px;
+  /* color: #fff; */
+  /* background: #34495e; */
+  /* font: 300 1em "Fira Sans", sans-serif; */
+  /* -webkit-box-pack: center;
+          justify-content: center;
+  align-content: center;
+  -webkit-box-align: center;
+          align-items: center; */
+  /* text-align: center; */
+  /* min-height: 100vh; */
+  /* display: -webkit-box;
+  display: flex; */
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.5em 1em;
 }
